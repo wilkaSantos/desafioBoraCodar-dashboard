@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Desenvolver o layout de um dashborad, onde apresenta os gráficos referente aos dados das vendas diárias e mensal. Neste projeto aumentei meus conhecimentos em animações.
 
-- [Visite o projeto]()
+- [Visite o projeto](https://wilkasantos.github.io/desafioBoraCodar-dashboard/)
 
 <br>
 ## 🔖 Layout
