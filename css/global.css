@@ -1,0 +1,30 @@
+@import './index.css';
+@import './generalChart.css';
+@import './dailyChart.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --ff-page: 'Inter', sans-serif;
+
+    --bg-page: #292738;
+    --bg-cards: #363447;
+    --bg-chartDaily: linear-gradient(180deg, #90F7EC 0%, #32CCBC 100%);
+    --bg-closedSales: linear-gradient(121.94deg, #CE9FFC 15.98%, #7367F0 82.85%);
+    --bg-monthlyGoal: linear-gradient(121.94deg, #DF9780 15.98%, #A66DE9 82.85%);
+    --bg-chart: #4A4556;
+    --bg-ico-chart: #4A4556;
+    
+    --c-text-page: #ffffff;
+    --c-text-excelente: #81FBB8;
+    --c-line: #4A4556;
+
+}

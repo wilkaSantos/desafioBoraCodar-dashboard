@@ -1,0 +1,37 @@
+
+.page{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5.9rem;
+
+    background: var(--bg-page);
+    color: var(--c-text-page);
+    font-family: var(--ff-page);
+}
+
+.container-generalChart{
+    width: 112rem;
+    height: 32rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-dailyChart{
+    width: 112rem;
+    height: 25rem;
+    padding: 2.5rem 4.8rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    background: var(--bg-cards);
+    box-shadow: 3px 4px 26px rgba(0, 0, 0, 0.25);
+    border-radius: 1.6rem;
+}

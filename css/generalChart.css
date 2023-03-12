@@ -1,0 +1,198 @@
+
+.wrappedChart{
+    padding: 2rem 4.8rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+
+    background: var(--bg-cards);
+    box-shadow: 3px 4px 26px rgba(0, 0, 0, 0.25);
+    border-radius: 1.6rem;
+}
+
+.chartTitle{
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 160%;
+}
+
+.chartLegend{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 160%;
+}  
+
+.ico{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.wrappedGraphic{
+    display: grid;
+    grid-template-columns: repeat(1, 16rem);
+    grid-gap: 8rem;
+
+    width: 15rem;
+    height: 15rem;
+
+    border-radius: 50%;
+    background: var(--bg-chart);
+}
+
+.wrappedGraphic .graphic .mask{
+    clip: rect(0px, 152px, 150px, 75px);
+}
+
+.insideCircle{
+    position: absolute;
+    background: var(--bg-cards);
+    border-radius: 50%;
+    line-height: 12rem;
+
+    
+    width: 12.4rem;
+    height: 12.4rem;
+    top: 1.3rem;
+    left: 1.3rem;
+
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+
+/* = = =  NPS = = = */
+
+.nps{
+    width: 29rem;
+}
+
+    .chart{
+        width: 12rem;
+        height: 19rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.6rem;
+    }
+    .chart p{
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 160%;
+
+        color: var(--c-text-excelente);
+    }
+
+
+
+  
+/* = = =  Closed Sales = = = */
+.closedSales{
+    width: 35.1rem;
+
+}
+
+.closedSalesLegend,
+.monthlyGoalLegend{
+    display: flex;
+    justify-content: space-between;
+
+    width: 25rem;
+}
+
+.containerExpecte,
+.containerReached{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.expectedIndicator{
+    background: var( --bg-ico-chart);
+}
+.reachedIndicator{
+    background: var(--bg-closedSales);
+}
+
+.chartClosedSales{
+    position: relative;
+}
+
+.mask,
+.fill-chartclosedSales{
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.mask .fill-chartclosedSales{
+    clip: rect(0px, 75px, 150px, 0px);
+    background: var(--bg-closedSales);
+}
+
+.full-chartclosedSales,
+.graphic .fill-chartclosedSales{
+    animation: minMaxClosedSales 3s ease-in-out;
+    transform: rotate(90deg);
+}
+
+@keyframes minMaxClosedSales{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+
+
+/* = = = Monthly Goal = = = */
+
+.monthlyGoal{
+    width: 37.9rem;
+}
+    .indicatorReached{
+        background: var(--bg-monthlyGoal);
+    }
+
+.chartMonthlyGoal{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.mask,
+.fill-chartMonthlyGoal{
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.mask .fill-chartMonthlyGoal{
+    clip: rect(0px, 75px, 150px, 0px);
+    background: var(--bg-monthlyGoal);
+}
+
+.full-chartMonthlyGoal,
+.graphic .fill-chartMonthlyGoal{
+    animation: minMaxMonthlyGoal 3s ease-in-out;
+    transform: rotate(145deg);
+}
+
+@keyframes minMaxMonthlyGoal{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(145deg);
+    }
+}

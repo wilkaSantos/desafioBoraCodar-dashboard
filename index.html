@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="shortcut icon" href="./images/ico-speedometer.png" type="image/x-icon">
+
+        <title>Dashboard</title>
+    </head>
+    <body>
+       <div class="page">
+        <section class="container-generalChart">
+            <div class="wrappedChart nps">
+                <p class="chartTitle">NPS Geral</p>
+                <div class="chart">
+                    <img class="emoji" src="./images/ico-smile.svg" alt="Imagem de uma carinha feliz de cor verde">
+                    <p>Excelente!</p>
+                </div>
+                <div class="chartLegend">
+                    <p>NPS Socre 75</p>
+                </div>    
+            </div>
+            <div class="wrappedChart closedSales">
+                <p class="chartTitle">Vendas Fechadas</p>
+                <div class="chartClosedSales">
+                    <div class="wrappedGraphic">
+                        <div class="graphic">
+                            <div class="mask full-chartclosedSales">
+                                <div class="fill-chartclosedSales"></div>
+                            </div>
+                            <div class="mask half-chartclosedSales">
+                                <div class="fill-chartclosedSales"></div>
+                            </div>
+                            <div class="insideCircle">50%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chartLegend closedSalesLegend">
+                    <div class="containerExpecte">
+                        <div class="ico expectedIndicator"></div>
+                        <p>Esperado</p>
+                    </div>
+                    <div class="containerReached">
+                        <div class="ico reachedIndicator"></div>
+                        <p>Alcançado</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrappedChart monthlyGoal">
+                <p class="chartTitle">Meta Mensal</p>
+                <div class="chartMonthlyGoal">
+                    <div class="wrappedGraphic">
+                        <div class="graphic">
+                            <div class="mask full-chartMonthlyGoal">
+                                <div class="fill-chartMonthlyGoal"></div>
+                            </div>
+                            <div class="mask half-chartMonthlyGoal">
+                                <div class="fill-chartMonthlyGoal"></div>
+                            </div>
+                            <div class="insideCircle">80%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chartLegend monthlyGoalLegend">
+                    <div class="containerExpecte">
+                        <div class="ico expectedIndicator"></div>
+                        <p>Esperado</p>
+                    </div>
+                    <div class="containerReached">
+                        <div class="ico indicatorReached"></div>
+                        <p>Alcançado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-dailyChart">
+            <p class="title-daily">Vendas por dia da semana</p>
+            <div class="wrappedData">
+                <div class="container-salesData">
+                    <div class="wrapped-salesUp">
+                        <div class="wrappedDaily">
+                            <img src="./images/arrowUp.svg" alt="Imagem de uma seta apontada para cima de cor verde">
+                            <p>Dia com mais vendas</p>
+                        </div>
+                        <p class="namedDay">quarta-feira</p>
+                    </div>
+                    <div class="wrapped-salesDown">
+                        <div class="wrappedDaily">
+                            <img src="./images/arrowdown.svg" alt="Imagem de uma seta apontada para baixo de cor vermelha">
+                            <p>Dia com menos vendas</p>
+                        </div>
+                        <p class="namedDay">domingo</p>
+                    </div>
+                </div>
+                <div class="container-salesChart">
+                    <hr class="line">
+                    <div class="containerDays">
+                        <div class="wrapped-progressDay">
+                            <div class="bar bar-dom">
+                                <div class="progress dom"></div>
+                            </div>
+                            <p class="textOfDay">dom</p>
+                        </div>
+                        <div class="wrapped-progressDay">
+                            <div class="bar bar-seg">
+                                <div class="progress"></div>
+                            </div>
+                            <p class="textOfDay">seg</p>
+                        </div>
+                        <div class="wrapped-progressDay">
+                            <div class="bar bar-ter">
+                                <div class="progress"></div>
+                            </div>
+                            <p class="textOfDay">ter</p>
+                        </div>
+                        <div class="wrapped-progressDay">
+                            <div class="bar bar-qua">
+                                <div class="progress"></div>
+                            </div>
+                            <p class="textOfDay">qua</p>
+                        </div>
+                        <div class="wrapped-progressDay">
+                            <div class="bar bar-qui">
+                                <div class="progress"></div>
+                            </div>
+                            <p class="textOfDay">qui</p>
+                        </div>
+                        <div class="wrapped-progressDay">
+                            <div class="bar bar-sex">
+                                <div class="progress"></div>
+                            </div>
+                            <p class="textOfDay">sex</p>
+                        </div>
+                        <div class="wrapped-progressDay">
+                            <div class="bar bar-sab">
+                                <div class="progress"></div>
+                            </div>
+                            <p class="textOfDay">sab</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       </div> 
+    </body>
+</html>
